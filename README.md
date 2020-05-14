@@ -1,6 +1,6 @@
 # SQL-Notes
 
-##Column Constraints
+## Column Constraints
 Column constraints are the rules applied to the values of individual columns:
 
 PRIMARY KEY constraint can be used to uniquely identify the row.
@@ -18,7 +18,7 @@ CREATE TABLE student (
 );
 ```
 
-##CREATE TABLE Statment
+## CREATE TABLE Statment
 The CREATE TABLE statement creates a new table in a database. It allows one to specify the name of the table and the name of each column in the table.
 
 ```SQL
@@ -30,7 +30,7 @@ CREATE TABLE table_name (
 );
 ```
 
-##INSERT Statement
+## INSERT Statement
 The INSERT INTO statement is used to add a new record (row) to a table.
 
 It has two forms as shown:
@@ -47,7 +47,7 @@ INSERT INTO table_name (column1, column2)
 VALUES (value1, value2);
 ```
 
-##ALTER TABLE Statement
+## ALTER TABLE Statement
 
 The ALTER TABLE statement is used to modify the columns of an existing table. When combined with the ADD COLUMN clause, it is used to add a new column.
 ```SQL
@@ -55,7 +55,7 @@ The ALTER TABLE statement is used to modify the columns of an existing table. Wh
 ALTER TABLE table_name
 ADD column_name datatype;
 ```
-##DELETE Statement
+## DELETE Statement
 
 The DELETE statement is used to delete records (rows) in a table. The WHERE clause specifies which record or records that should be deleted. If the WHERE clause is omitted, all records will be deleted.
 ```SQL
@@ -63,7 +63,7 @@ The DELETE statement is used to delete records (rows) in a table. The WHERE clau
 DELETE FROM table_name
 WHERE some_column = some_value;
 ```
-##UPDATE Statement
+## UPDATE Statement
 
 The UPDATE statement is used to edit records (rows) in a table. It includes a SET clause that indicates the column to edit and a WHERE clause for specifying the record(s).
 ```SQL
