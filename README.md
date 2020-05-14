@@ -9,6 +9,7 @@ NOT NULL columns must have a value.
 DEFAULT assigns a default value for the column when no value is specified.
 There can be only one PRIMARY KEY column per table and multiple UNIQUE columns.
 
+```SQL
 CREATE TABLE student (
   id INTEGER PRIMARY KEY,
   name TEXT UNIQUE,
@@ -16,7 +17,8 @@ CREATE TABLE student (
   age INTEGER DEFAULT 10
 );
 
-CREATE TABLE Statment
+
+##CREATE TABLE Statment
 The CREATE TABLE statement creates a new table in a database. It allows one to specify the name of the table and the name of each column in the table.
 
 CREATE TABLE table_name (
@@ -25,7 +27,7 @@ CREATE TABLE table_name (
   column3 datatype
 );
 
-INSERT Statement
+##INSERT Statement
 The INSERT INTO statement is used to add a new record (row) to a table.
 
 It has two forms as shown:
@@ -39,19 +41,26 @@ VALUES (value1, value2);
 -- Insert into columns by name:
 INSERT INTO table_name (column1, column2)
 VALUES (value1, value2);
-ALTER TABLE Statement
+
+##ALTER TABLE Statement
+
 The ALTER TABLE statement is used to modify the columns of an existing table. When combined with the ADD COLUMN clause, it is used to add a new column.
 
 ALTER TABLE table_name
 ADD column_name datatype;
-DELETE Statement
+
+##DELETE Statement
+
 The DELETE statement is used to delete records (rows) in a table. The WHERE clause specifies which record or records that should be deleted. If the WHERE clause is omitted, all records will be deleted.
 
 DELETE FROM table_name
 WHERE some_column = some_value;
-UPDATE Statement
+
+##UPDATE Statement
+
 The UPDATE statement is used to edit records (rows) in a table. It includes a SET clause that indicates the column to edit and a WHERE clause for specifying the record(s).
 
 UPDATE table_name
 SET column1 = value1, column2 = value2
 WHERE some_column = some_value;
+```
